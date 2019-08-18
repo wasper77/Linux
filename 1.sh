@@ -2,9 +2,9 @@
 # Install script for Arch Linux
 # autor: Alex Creio https://cvc.hashbase.io/
 
-# https://raw.githubusercontent.com/creio/dots/master/.bin/creio.sh
+# https://raw.githubusercontent.com/wasper77/Linux/master/1.sh
 
-# wget https://github.com/wasper77/Linux/edit/master/wasper_arch.sh
+# wget https://raw.githubusercontent.com/wasper77/Linux/master/1.sh
 # nano wasper_arch.sh
 # sh wasper_arch.sh
 
