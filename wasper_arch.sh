@@ -4,9 +4,9 @@
 
 # https://raw.githubusercontent.com/creio/dots/master/.bin/creio.sh
 
-# wget git.io/creio.sh
-# nano creio.sh
-# sh creio.sh
+# wget https://github.com/wasper77/Linux/edit/master/wasper_arch.sh
+# nano wasper_arch.sh
+# sh wasper_arch.sh
 
 Check for root
 if [[ $EUID -ne 0 ]]; then
