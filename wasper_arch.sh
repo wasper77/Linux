@@ -17,8 +17,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 
-R_DISK="sdb1"
-B_DISK="sdb2"
+B_DISK="sdb1"
+R_DISK="sdb2"
 H_DISK="sdb3"
 S_DISK="sdb4"
 
@@ -27,10 +27,10 @@ setfont cyr-sun16
 
 timedatectl set-ntp true
 
-mkfs.ext4 /dev/$R_DISK -L root
-
 mkfs.ext2 /dev/$B_DISK -L boot
 # mkfs.fat -F32 /dev/$B_DISK -L boot
+
+mkfs.ext4 /dev/$R_DISK -L root
 
 mkfs.ext4 /dev/$H_DISK -L home
 mkswap /dev/$S_DISK -L swap
@@ -52,8 +52,8 @@ reflector -c "Russia" -c "Belarus" -c "Ukraine" -c "Poland" -f 20 -l 20 -p https
 
 pacstrap /mnt base base-devel
 
-cp creio2.sh /mnt/creio2.sh
-chmod u+x /mnt/creio2.sh
+# cp creio2.sh /mnt/creio2.sh
+# chmod u+x /mnt/creio2.sh
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
